@@ -1,19 +1,15 @@
 
-public class Samsung extends Android
+public class Mi extends Android
 {
-	private boolean Samsungpay;
+	private boolean mistore;
 	
-	public Samsung()
+	void setMistore(boolean value)
 	{
-		
+		this.mistore=value;
 	}
-	void setSamsungPay(boolean value)
+	boolean getMistore()
 	{
-		this.Samsungpay=value;
-	}
-	boolean getSamsungPay()
-	{
-		return this.Samsungpay;
+		return this.mistore;
 	}
 	void printDetails()
 	{
@@ -28,7 +24,7 @@ public class Samsung extends Android
 		System.out.println("AppStore: "+getAppStore());
 		System.out.println("MemoryCard: "+getMemoryCard());
 		System.out.println("Camera: "+getCamera()+"\n");
-		System.out.println("Samsung Features Are:");
-		System.out.println("SamsungPay: "+getSamsungPay());
+		System.out.println("Mi Features Are:");
+		System.out.println("MiStore Features are: "+getMistore());
 	}
 }
