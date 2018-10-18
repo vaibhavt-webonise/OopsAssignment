@@ -1,78 +1,44 @@
 
-public class Android implements MobilePhone
+public class Android extends Mobile
 {
-	int cameraPixel,ram,price;
-	String simType,colour,mapsType;
-	boolean bluetoothMode;
-	@Override
-	public void setCameraPixel(int value) {
-		this.cameraPixel=value;
-	}
-	@Override
-	public void setSimType(String value) {
-		this.simType=value;
-	}
-	@Override
-	public void setRamMemory(int value) {
-		this.ram=value;
-	}
-	@Override
-	public void setColour(String value) {
-		this.colour=value;
-	}
-	public void setmapsType(String value) {
-		this.mapsType=value;
-	}
-	public void setbluetoothMode(boolean value) {
-		this.bluetoothMode=value;
-	}
-	boolean getbluetoothMode()
+	String appStore;
+	boolean bluetooth;
+	int memorycard,camera;
+	public Android()
 	{
-		return this.bluetoothMode;
+		
 	}
-	String getSimType()
+	void setAppStore(String value)
 	{
-		return this.simType;
+		this.appStore=value;
 	}
-	int getRam()
+	void setBluetooth(boolean value)
 	{
-		return this.ram;
+		this.bluetooth=value;
 	}
-	String getColour()
+	void setMemoryCard(int value)
 	{
-		return this.colour;
+		this.memorycard=value;
 	}
-	int getCameraPixel()
+	void setCamera(int value)
 	{
-		return this.cameraPixel;
-	}
-	String getmapsType()
-	{
-		return mapsType;
-	}
-	boolean setbluetoothMode()
-	{
-		return bluetoothMode;
-	}
-	public void setPrice(int value)
-	{
-		this.price=value;
-	}
-	@Override
-	public int getPrice() {
-		// TODO Auto-generated method stub
-		return this.price;
-	}
-	@Override
-	public int getPrice(String Colour) {
-		// TODO Auto-generated method stub
-		return this.price+1500;
-	}
-	@Override
-	public int getPrice(String Colour, int ram) {
-		// TODO Auto-generated method stub
-		return this.price+3000;
+		this.camera=value;
 	}
 	
-	
+	String getAppStore()
+	{
+		return this.appStore;
+	}
+	boolean getBluetooth()
+	{
+		return this.bluetooth;
+	}
+	int getMemoryCard()
+	{
+		return this.memorycard;
+	}
+	int getCamera()
+	{
+		return this.camera;
+	}
 }

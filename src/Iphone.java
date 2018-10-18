@@ -1,72 +1,54 @@
 
-public class Iphone implements MobilePhone
+public class Iphone extends Mobile
 {
-	int cameraPixel,ram,price;
-	String simType,colour,version,iphoneModel;
-	@Override
-	public void setCameraPixel(int value) {
-		this.cameraPixel=value;
-	}
-	@Override
-	public void setSimType(String value) {
-		this.simType=value;
-	}
-	@Override
-	public void setRamMemory(int value) {
-		this.ram=value;
-	}
-	@Override
-	public void setColour(String value) {
-		this.colour=value;
-	}
-	public void setVersion(String value) {
-		this.version=value;
-	}
-	public void setiphoneModel(String value) {
-		this.iphoneModel=value;
-	}
-	public void setPrice(int value)
+	String colour;//= {"White","Black","Gold","RoseGold","Silver"};
+	int rom;//= {32,64,128,256};
+	int ram;//= {8,16,32};
+	public Iphone()
 	{
-		this.price=value;
+		
 	}
-	String getVersion()
+	/*public Iphone(String color,int rom,int ram)
 	{
-		return this.version;
-	}
-	String getiphoneModel()
+		//super(true,true,true,15000,"Single");
+		setColour(color);
+		setRom(rom);
+		setRam(ram);
+	}*/
+	void setColour(String color)
 	{
-		return iphoneModel;
+		this.colour=color;
 	}
-	@Override
-	public int getPrice() {
-		// TODO Auto-generated method stub
-		return this.price;
-	}
-	@Override
-	public int getPrice(String Colour) {
-		// TODO Auto-generated method stub
-		return this.price+1500;
-	}
-	@Override
-	public int getPrice(String Colour, int ram) {
-		// TODO Auto-generated method stub
-		return this.price+3000;
-	}
-	String getSimType()
+	void setRom(int rom)
 	{
-		return this.simType;
+		this.rom=rom;
 	}
-	int getRam()
+	void setRam(int ram)
 	{
-		return this.ram;
+		this.ram=ram;
 	}
 	String getColour()
 	{
 		return this.colour;
 	}
-	int getCameraPixel()
+	int getRom()
 	{
-		return this.cameraPixel;
+		return this.rom;
 	}
-
+	int getRam()
+	{
+		return this.ram;
+	}/*
+	public static void main(String args[])
+	{
+		Iphone i=new Iphone("Rose Gold",32,256);
+		System.out.println("Sms: "+i.getSms());
+		System.out.println("Mms: "+i.getMms());
+		System.out.println("Call: "+i.getCall());
+		System.out.println("Price: "+i.getPrice());
+		System.out.println("Sim Type: "+i.getSimtype());
+		System.out.println("Colour: "+i.getColour());
+		System.out.println("Rom: "+i.getRom());
+		System.out.println("Ram: "+i.getRam());
+	}*/
 }
