@@ -22,12 +22,8 @@ public class Iphone implements MobilePhone
 	public void setVersion(String value) {
 		this.version=value;
 	}
-	public void setiphoneModel(String value) {
+	public void setiphoneMode(String value) {
 		this.iphoneModel=value;
-	}
-	public void setPrice(int value)
-	{
-		this.price=value;
 	}
 	String getVersion()
 	{
@@ -51,22 +47,6 @@ public class Iphone implements MobilePhone
 	public int getPrice(String Colour, int ram) {
 		// TODO Auto-generated method stub
 		return this.price+3000;
-	}
-	String getSimType()
-	{
-		return this.simType;
-	}
-	int getRam()
-	{
-		return this.ram;
-	}
-	String getColour()
-	{
-		return this.colour;
-	}
-	int getCameraPixel()
-	{
-		return this.cameraPixel;
 	}
 
 }

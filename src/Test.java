@@ -18,13 +18,15 @@ public class Test {
 		System.out.println("2) IOS");
 		System.out.println("Enter Mobile Operating System Choice:");
 		mobileOSChoice=Integer.parseInt(bufferedReader.readLine());
-		switch(mobileOSChoice) {
+		switch(mobileOSChoice)
+		{
 			case 1:
 				System.out.println("1) Samsung");
 				System.out.println("2) Lenovo");
 				System.out.println("Enter Android Brand:");
 				androidChoice=Integer.parseInt(bufferedReader.readLine());
-				switch(androidChoice)	{
+				switch(androidChoice)
+				{
 					case 1:
 						samsung=new Samsung();
 						samsung.setbluetoothMode(true);
@@ -68,26 +70,7 @@ public class Test {
 						System.out.println("Price:"+lenovo.getPrice("Rose Gold"));
 						break;
 				}
-				break;
-			case 2:
-				iphone=new Iphone();
-				iphone.setCameraPixel(20);
-				iphone.setColour("Gold");
-				iphone.setiphoneModel("IphoneX");
-				iphone.setRamMemory(32);
-				iphone.setSimType("Single");
-				iphone.setVersion("IOS 8");
-				iphone.setPrice(15000);
-				System.out.println("IPhone Details Are....");
-				System.out.println("Camera:"+iphone.getCameraPixel()+"px");
-				System.out.println("Colour:"+iphone.getColour());
-				System.out.println("RAM:"+iphone.getRam()+"GB");
-				System.out.println("Iphone Model:"+iphone.getiphoneModel());
-				System.out.println("Sim Type:"+iphone.getSimType());
-				System.out.println("Iphone Version:"+iphone.getVersion());
-				System.out.println("Price:"+iphone.getPrice());
-				break;
-				
 		}
 	}
+
 }
